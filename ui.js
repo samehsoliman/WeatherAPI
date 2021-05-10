@@ -5,7 +5,7 @@ class UI {
         document.querySelector('#w-location').textContent = weather.name + ' - ' + weather.sys.country;
         document.querySelector('#w-desc').textContent = weather.weather[0].main;
         document.querySelector('#w-temp').textContent = Math.round(weather.main.temp) + ' C';
-        document.querySelector('#w-icon').setAttribute('src', `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
+        document.querySelector('#w-icon').setAttribute('src', `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
 
         document.querySelector('#w-min').textContent = 'Min temp: ' + Math.round(weather.main.temp_min) + ' C';
         document.querySelector('#w-max').textContent = 'Max temp: ' + Math.round(weather.main.temp_max) + ' C';
